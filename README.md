@@ -1,5 +1,9 @@
 # Mongo Server Example
 
+## Description
+
+Example project setup, to demonstrate how to work with [mock-server](https://www.mock-server.com/).
+
 ## Prerequisite
 
 Setup pnpm & install dependencies:
