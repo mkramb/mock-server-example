@@ -2,7 +2,7 @@
   "eslint.workingDirectories": [
     "packages/api",
     "packages/website",
-    "tests/e2e",
+    "tests/api-tests",
     "tests/mock-server"
   ],
   // javascript

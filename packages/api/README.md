@@ -1,4 +1,4 @@
-# api
+# @api
 
 A proxy service for https://github.com/wh-iterabb-it/meowfacts
 
@@ -6,4 +6,10 @@ A proxy service for https://github.com/wh-iterabb-it/meowfacts
 
 ```
 pnpm dev
+```
+
+## Providing a custom MEOW_FACTS_URL
+
+```
+MEOW_FACTS_URL=http://localhost:1080/facts pnpm dev
 ```

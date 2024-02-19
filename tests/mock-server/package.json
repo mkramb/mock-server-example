@@ -1,9 +1,14 @@
 {
-    "name": "mock-server",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-      "start": "docker-compose up"
-    }
+  "name": "mock-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "set:facts": "ts-node ./scripts/set-facts-expectations.ts",
+    "start": "docker-compose rm -f && docker-compose up --build --force-recreate"
+  },
+  "dependencies": {
+    "@types/node": "^20.11.19",
+    "mockserver-client": "^5.15.0",
+    "ts-node": "^10.9.2"
   }
-  
+}
