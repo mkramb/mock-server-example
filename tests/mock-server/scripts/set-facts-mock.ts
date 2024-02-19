@@ -1,10 +1,9 @@
 import mockServer from 'mockserver-client';
-import { Delay } from 'mockserver-client/mockServer';
 
 const MOCK_SERVER_HOST = 'localhost';
 const MOCK_SERVER_PORT = 1080;
 
-async function setFacts(delay: Delay = {}) {
+async function setMockFacts() {
   const apiServer = mockServer.mockServerClient(MOCK_SERVER_HOST, MOCK_SERVER_PORT);
   const mockedFacts = {
     data: [
@@ -17,12 +16,18 @@ async function setFacts(delay: Delay = {}) {
   await apiServer.mockAnyResponse({
     httpRequest: {
       method: 'GET',
-      path: '/facts',
+      path: '/mocked-facts',
     },
     httpResponse: {
       statusCode: 200,
       body: JSON.stringify(mockedFacts),
-      delay,
+      headers: {
+        'Content-Type': ['application/json'],
+      },
+      delay: {
+        timeUnit: 'SECONDS',
+        value: 2,
+      },
     },
     times: {
       unlimited: true,
@@ -30,7 +35,4 @@ async function setFacts(delay: Delay = {}) {
   });
 }
 
-setFacts({
-  timeUnit: 'SECONDS',
-  value: 2,
-});
+setMockFacts();

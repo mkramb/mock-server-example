@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "set:facts": "ts-node ./scripts/set-facts-expectations.ts",
+    "set:facts-mock": "ts-node ./scripts/set-facts-mock.ts",
+    "set:facts-proxy": "ts-node ./scripts/set-facts-proxy.ts",
     "start": "docker-compose rm -f && docker-compose up --build --force-recreate"
   },
   "dependencies": {
