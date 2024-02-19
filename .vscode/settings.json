@@ -1,5 +1,10 @@
 {
-  "eslint.workingDirectories": ["packages/payment-service"],
+  "eslint.workingDirectories": [
+    "packages/api",
+    "packages/website",
+    "tests/e2e",
+    "tests/mock-server"
+  ],
   // javascript
   "typescript.tsdk": "node_modules/typescript/lib",
   "editor.defaultFormatter": "esbenp.prettier-vscode",

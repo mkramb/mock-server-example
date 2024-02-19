@@ -1,0 +1,10 @@
+[
+  {
+    "httpRequest": {
+      "path": "/exampleExpectation"
+    },
+    "httpResponse": {
+      "body": "some testing response"
+    }
+  }
+]

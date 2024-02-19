@@ -1,0 +1,13 @@
+version: "2.4"
+services:
+  mockServer:
+    image: mockserver/mockserver:5.15.0
+    ports:
+      - 1080:1080
+    environment:
+      MOCKSERVER_PROPERTY_FILE: /config/server.properties
+      MOCKSERVER_INITIALIZATION_JSON_PATH: /config/initializer.json
+    volumes:
+      - type: bind
+        source: ./config
+        target: /config
