@@ -16,7 +16,7 @@ async function setMockFacts() {
   await apiServer.mockAnyResponse({
     httpRequest: {
       method: 'GET',
-      path: '/mocked-facts',
+      path: '/mock-facts',
     },
     httpResponse: {
       statusCode: 200,
