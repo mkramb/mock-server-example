@@ -1,0 +1,12 @@
+{
+  "name": "mock-server-example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "pnpm run build",
+    "remove-node-modules": "npx npkill"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}
