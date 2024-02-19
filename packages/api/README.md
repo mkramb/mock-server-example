@@ -1,9 +1,9 @@
-# @example/api
+# api
+
+A proxy service for https://github.com/wh-iterabb-it/meowfacts
 
 ## Running the api
 
 ```
-pnpm start
-pnpm start:dev
-pnpm start:prod
+pnpm dev
 ```

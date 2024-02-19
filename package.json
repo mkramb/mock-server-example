@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "start": "pnpm run --filter 'api' --filter 'website' dev",
     "remove-node-modules": "npx npkill"
   },
   "devDependencies": {

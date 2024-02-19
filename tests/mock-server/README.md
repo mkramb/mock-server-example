@@ -1,1 +1,1 @@
-# @example/mock-server
+# mock-server

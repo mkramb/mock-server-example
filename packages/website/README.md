@@ -1,4 +1,4 @@
-# @example/website
+# website
 
 ## Getting Started
 

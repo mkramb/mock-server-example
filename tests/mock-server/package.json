@@ -1,5 +1,5 @@
 {
-    "name": "@example/mock-server",
+    "name": "mock-server",
     "version": "1.0.0",
     "private": true,
     "scripts": {

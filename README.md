@@ -15,10 +15,10 @@ pnpm install
 
 #### Application
 
-- [@example/api](./packages/api//README.md)
-- [@example/website](./packages/website/README.md)
+- [api](./packages/api//README.md)
+- [website](./packages/website/README.md)
 
 #### Tests
 
-- [@example/e2e](./tests/e2e/README.md)
-- [@example/mock-server](./tests/mock-server/README.md)
+- [e2e-tests](./tests/e2e/README.md)
+- [mock-server](./tests/mock-server/README.md)
