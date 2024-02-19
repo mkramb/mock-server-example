@@ -20,5 +20,5 @@ pnpm install
 
 #### Tests
 
-- [e2e-tests](./tests/e2e/README.md)
+- [api-tests](./tests/api-tests/README.md)
 - [mock-server](./tests/mock-server/README.md)
