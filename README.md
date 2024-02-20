@@ -1,8 +1,8 @@
-# Mongo Server Example
+# Mock Server Example
 
 ## Description
 
-Example project setup, to demonstrate how to work with [mock-server](https://www.mock-server.com/).
+To demonstrate how to work with [mock-server](https://www.mock-server.com/).
 
 ## Prerequisite
 
