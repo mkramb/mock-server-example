@@ -13,5 +13,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Providing a custom API url
 
 ```
-API_URL=http://localhost:1080 pnpm dev
+API_URL=http://localhost:1080/mock-facts pnpm dev
 ```

@@ -8,10 +8,10 @@ import {
   TableRow,
 } from '@/components/ui/table';
 
-const API_URL = process.env.API_URL ?? 'http://localhost:3001';
+const API_URL = process.env.API_URL ?? 'http://localhost:3001/facts';
 
 export const getFacts = async (): Promise<string[]> => {
-  const response = await fetch(`${API_URL}/facts`, { cache: 'no-store' });
+  const response = await fetch(`${API_URL}`, { cache: 'no-store' });
 
   if (!response.ok) {
     throw new Error('Failed to fetch data');
