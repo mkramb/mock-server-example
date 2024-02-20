@@ -11,5 +11,5 @@ pnpm dev
 ## Providing a custom MEOW_FACTS_URL
 
 ```
-MEOW_FACTS_URL=http://localhost:1080/facts pnpm dev
+MEOW_FACTS_URL=http://localhost:1080/mock-facts pnpm start:dev
 ```
